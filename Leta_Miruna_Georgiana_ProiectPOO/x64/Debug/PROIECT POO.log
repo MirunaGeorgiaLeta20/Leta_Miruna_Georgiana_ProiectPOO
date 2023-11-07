@@ -1,0 +1,5 @@
+﻿  FAZELE 1,2,3.cpp
+D:\A. FACULTATE\PROIECT POO\Leta_Miruna_Georgiana_ProiectPOO\PROIECT POO\FAZELE 1,2,3.cpp(648,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+D:\A. FACULTATE\PROIECT POO\Leta_Miruna_Georgiana_ProiectPOO\PROIECT POO\FAZELE 1,2,3.cpp(25): warning C4715: 'localitateString': not all control paths return a value
+D:\A. FACULTATE\PROIECT POO\Leta_Miruna_Georgiana_ProiectPOO\PROIECT POO\FAZELE 1,2,3.cpp(211): warning C4715: 'Sera::operator[]': not all control paths return a value
+  PROIECT POO.vcxproj -> D:\A. FACULTATE\PROIECT POO\Leta_Miruna_Georgiana_ProiectPOO\PROIECT POO\x64\Debug\PROIECT POO.exe
