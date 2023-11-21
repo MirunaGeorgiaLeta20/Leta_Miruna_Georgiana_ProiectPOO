@@ -950,12 +950,12 @@ void main() {
 	cout << endl << endl;
 	
 
-	/*cout << "Operatorul >>"<<"\nCitim de la tastatura" << endl;
+	cout << "Operatorul >>"<<"\nCitim de la tastatura" << endl;
 	cin >> s3;
 	cout << endl;
 	cout << s3 << endl;
 
-	cout << endl << endl;*/
+	cout << endl << endl;
 
 
 	cout << "FERMIER" << endl << endl;
@@ -1132,7 +1132,7 @@ void main() {
 	cout << endl;
 
 
-	/*cout << "Vectori de tipul celor 3 clase";
+	cout << "Vectori de tipul celor 3 clase";
 	const int numarFerme = 1; 
 	Ferma ferme[numarFerme];
 	const int numarFermieri = 2;
@@ -1176,6 +1176,6 @@ void main() {
 			cin >> matriceLegume[i][j];
 			cout << matriceLegume[i][j];
 		}
-	}*/
+	}
 
 }
