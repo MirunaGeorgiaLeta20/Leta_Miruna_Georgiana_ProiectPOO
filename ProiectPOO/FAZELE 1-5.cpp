@@ -927,11 +927,6 @@ public:
 		return *this;
 	}
 
-	/*string nume;
-	int nrVanzatori;
-	float venitZilnic;
-	int nrLegume;
-	Leguma* vLegume;*/
 
 	string getNume() {
 		return this->nume;
@@ -1010,176 +1005,176 @@ public:
 
 void main() {
 
-	//cout << "FERMA" << endl << endl;
+	cout << "FERMA" << endl << endl;
 
-	//string* tipSera = new string[3];
-	//tipSera[0] = "Rece";
-	//tipSera[1] = "Temperata";
-	//tipSera[2] = "Calda";
+	string* tipSera = new string[3];
+	tipSera[0] = "Rece";
+	tipSera[1] = "Temperata";
+	tipSera[2] = "Calda";
 
-	//float* temperatura = new float[3];
-	//temperatura[0] = 8.5;
-	//temperatura[1] = 18;
-	//temperatura[2] = 27;
+	float* temperatura = new float[3];
+	temperatura[0] = 8.5;
+	temperatura[1] = 18;
+	temperatura[2] = 27;
 
-	//Ferma s1;
-	//Ferma s2(2000, Odobesti, false);
-	//Ferma s3(2010, Panciu, 3, tipSera, temperatura, true);
+	Ferma s1;
+	Ferma s2(2000, Odobesti, false);
+	Ferma s3(2010, Panciu, 3, tipSera, temperatura, true);
 
-	//cout << s1 << endl;
-	//cout << s2 << endl;
-	//cout << s3 << endl;
-	//
+	cout << s1 << endl;
+	cout << s2 << endl;
+	cout << s3 << endl;
+	
 
-	//cout << "Temperatura medie: " <<  Ferma::calculTemperaturaMedie(temperatura, 3) << endl << endl;
+	cout << "Temperatura medie: " <<  Ferma::calculTemperaturaMedie(temperatura, 3) << endl << endl;
 
-	//cout <<"Judet: "<< Ferma::getJudet() << endl;
-	//cout << endl << endl;
+	cout <<"Judet: "<< Ferma::getJudet() << endl;
+	cout << endl << endl;
 
-	//cout << "Constructorul de copiere" << endl;
-	//Ferma s4=s2;
-	//cout << s4 << endl;
-	//cout << endl;
+	cout << "Constructorul de copiere" << endl;
+	Ferma s4=s2;
+	cout << s4 << endl;
+	cout << endl;
 
-	//cout << "Operatorul =" << endl;
-	//s4 = s3;
-	//cout<<s4<<endl;
-	//cout << endl;
+	cout << "Operatorul =" << endl;
+	s4 = s3;
+	cout<<s4<<endl;
+	cout << endl;
 
-	//cout << "Operatorul []" << "\nAccesam elementele celui de-al doilea vector";
-	//pair <string, float> fer = s3[1];
-	//cout << "\nTip sera: " << fer.first << ", Temperatura: " << fer.second;
-	//cout << endl << endl << endl;
-
-
-	//cout << "Afisam valorile obiectului s3 dupa modificari" << endl;
-
-	//cout << "An infiintare: " << s3.getAnInfiintare() << endl;
-
-	//s3.setLocalitate(Mandresti);
-	//cout << "Localitate: " << localitateString(s3.getLocalitate()) << endl;
-
-	//string tip[] = { "Rece", "Calda" };
-	//float temp[] = { 8, 29 };
-
-	//s3.setSera(2, tip, temp);
-	//cout << "Numar sere: " << s3.getNrSere() << endl;
-	//for (int i = 0; i < s3.getNrSere(); i++) {
-	//	cout << "Tip sera " << i + 1 << ": " << s3.getTipSera()[i] << "; Temperatura " << i + 1 << ": " << s3.getTemperatura()[i] << endl;
-	//}
-
-	//s3.setArePanouriFotovoltaice(false);
-	//cout << "Are panouri fotovoltaice: " << s3.getArePanouriFotovoltaice() << endl;
-
-	//s3.setJudet("Galati");
-	//cout <<"Judet: "<< Ferma::getJudet() << endl << endl;
-	//cout << endl;
-
-	//cout << "Operatorul <<"<<"\nAfisare noua sera s3" << endl;
-	//cout << s3;
-	//cout << "Judet: " << Ferma::getJudet();
-
-	//cout << endl << endl;
-
-	//cout << "Operatorul!" << endl;
-	//cout << "s2 panouri fotovoltaice initial : " << s2.getArePanouriFotovoltaice() << endl;
-	//!s2;
-	//cout<<"s2 panouri fotovoltaice dupa operatorul! : "<< s2.getArePanouriFotovoltaice() << endl;
-	//cout << endl << endl;
-	//
-
-	//cout << "Operatorul >>"<<"\nCitim de la tastatura" << endl;
-	//cin >> s3;
-	//cout << endl;
-	//cout << s3 << endl;
-
-	//cout << endl << endl;
+	cout << "Operatorul []" << "\nAccesam elementele celui de-al doilea vector";
+	pair <string, float> fer = s3[1];
+	cout << "\nTip sera: " << fer.first << ", Temperatura: " << fer.second;
+	cout << endl << endl << endl;
 
 
-	//cout << "FERMIER" << endl << endl;
+	cout << "Afisam valorile obiectului s3 dupa modificari" << endl;
 
-	//int* pretEchipament = new int[4];
-	//pretEchipament[0] = 800;
-	//pretEchipament[1] = 1100;
-	//pretEchipament[2] = 1300;
-	//pretEchipament[3] = 2200;
+	cout << "An infiintare: " << s3.getAnInfiintare() << endl;
 
-	//Fermier f1;
-	//Fermier f2("George Paun", 29);
-	//Fermier f3("Anca Ionescu", 38, 4, pretEchipament);
+	s3.setLocalitate(Mandresti);
+	cout << "Localitate: " << localitateString(s3.getLocalitate()) << endl;
 
-	//f1.afisareFermier();
-	//f2.afisareFermier();
-	//f3.afisareFermier();
+	string tip[] = { "Rece", "Calda" };
+	float temp[] = { 8, 29 };
 
-	//pretTotalEchipamente(f3.getNume(), f3.getNrEchipamente(), f3.getPretEchipamente());
-	//cout << endl;
+	s3.setSera(2, tip, temp);
+	cout << "Numar sere: " << s3.getNrSere() << endl;
+	for (int i = 0; i < s3.getNrSere(); i++) {
+		cout << "Tip sera " << i + 1 << ": " << s3.getTipSera()[i] << "; Temperatura " << i + 1 << ": " << s3.getTemperatura()[i] << endl;
+	}
 
-	//cout << "Numar fermieri: " << Fermier::getNrFermieri() << endl;
-	//cout << endl;
+	s3.setArePanouriFotovoltaice(false);
+	cout << "Are panouri fotovoltaice: " << s3.getArePanouriFotovoltaice() << endl;
 
-	//cout << "Constructor de copiere" << endl;
-	//Fermier f4=f1;
-	//f4.afisareFermier();
+	s3.setJudet("Galati");
+	cout <<"Judet: "<< Ferma::getJudet() << endl << endl;
+	cout << endl;
 
-	//cout << "Operator =" << endl;
-	//f4 = f3;
-	//cout << f4 << endl;
+	cout << "Operatorul <<"<<"\nAfisare noua sera s3" << endl;
+	cout << s3;
+	cout << "Judet: " << Ferma::getJudet();
 
-	//cout << "Operator >=" << endl;
-	//cout << "Varsta fermier 2: " << f2.getVarsta() << ", Varsta fermier 3: " << f3.getVarsta() << endl;
-	//if (f2 >= f3) {
-	//	cout << "Fermierul 2 are o varsta mai mare sau egala decat Fermierul 3" << endl;
-	//}
-	//else
-	//	cout << "Fermierul 2 are o varsta mai mica decat Fermierul 3" << endl;
-	//cout << endl;
+	cout << endl << endl;
 
-	//cout << "Operator()" << "\nModificam pretul primului echipament" << endl;
-	//Fermier f8("George Paun", 24, 4, pretEchipament);
-	//f8(0, 850);
-	//f8.afisareFermier();
+	cout << "Operatorul!" << endl;
+	cout << "s2 panouri fotovoltaice initial : " << s2.getArePanouriFotovoltaice() << endl;
+	!s2;
+	cout<<"s2 panouri fotovoltaice dupa operatorul! : "<< s2.getArePanouriFotovoltaice() << endl;
+	cout << endl << endl;
+	
 
-	//cout << "Operator +=" << "\nAdaugam un nou echipament cu pretul 2500" << endl;
-	//f3 += 2500;
-	//f3.afisareFermier();
+	cout << "Operatorul >>"<<"\nCitim de la tastatura" << endl;
+	cin >> s3;
+	cout << endl;
+	cout << s3 << endl;
 
-	//cout << "Operator -=" << "\nEliminam echipamentul cu pretul 1300" << endl;
-	//f3 -= 1300;
-	//f3.afisareFermier();
-	//cout << endl;
-
-	//cout << "Afisam valorile obiectului f3 dupa modificari" << endl;
-
-	//cout << "ID: "<<f3.getId() << endl;
-
-	//f3.setNume("Sandra Diac");
-	//cout << "Nume: "<<f3.getNume() << endl;
-
-	//f3.setVarsta(32);
-	//cout << "Varsta: "<<f3.getVarsta() << endl;
-
-	//int pret[] = { 99, 760, 1150, 1600, 2300 };
-	//f3.setEchipament(5, pret);
-	//cout << "Numar echipamente: " << f3.getNrEchipamente() << endl;
-	//for (int i = 0; i < f3.getNrEchipamente(); i++) {
-	//	cout << "Pret echipament " << i + 1 << ": " << f3.getPretEchipamente()[i] << endl;
-	//}
-	//cout << endl;
-	//f3.setNrFermieri(10);
-	//cout << "Numar Fermieri: "<<Fermier::getNrFermieri() << endl << endl;
-	//cout << endl;
+	cout << endl << endl;
 
 
-	//Fermier::resetNrFermieri();
-	//cout << "Resetare Fermieri; Reincepem inregistrarea fermierilor" << endl;
+	cout << "FERMIER" << endl << endl;
 
-	//Fermier f5;
-	//f5.afisareFermier();
-	//Fermier f6("Bogdan Antal", 41, 2, pretEchipament);
-	//f6.afisareFermier();
+	int* pretEchipament = new int[4];
+	pretEchipament[0] = 800;
+	pretEchipament[1] = 1100;
+	pretEchipament[2] = 1300;
+	pretEchipament[3] = 2200;
 
-	//cout << endl << endl;
+	Fermier f1;
+	Fermier f2("George Paun", 29);
+	Fermier f3("Anca Ionescu", 38, 4, pretEchipament);
+
+	f1.afisareFermier();
+	f2.afisareFermier();
+	f3.afisareFermier();
+
+	pretTotalEchipamente(f3.getNume(), f3.getNrEchipamente(), f3.getPretEchipamente());
+	cout << endl;
+
+	cout << "Numar fermieri: " << Fermier::getNrFermieri() << endl;
+	cout << endl;
+
+	cout << "Constructor de copiere" << endl;
+	Fermier f4=f1;
+	f4.afisareFermier();
+
+	cout << "Operator =" << endl;
+	f4 = f3;
+	cout << f4 << endl;
+
+	cout << "Operator >=" << endl;
+	cout << "Varsta fermier 2: " << f2.getVarsta() << ", Varsta fermier 3: " << f3.getVarsta() << endl;
+	if (f2 >= f3) {
+		cout << "Fermierul 2 are o varsta mai mare sau egala decat Fermierul 3" << endl;
+	}
+	else
+		cout << "Fermierul 2 are o varsta mai mica decat Fermierul 3" << endl;
+	cout << endl;
+
+	cout << "Operator()" << "\nModificam pretul primului echipament" << endl;
+	Fermier f8("George Paun", 24, 4, pretEchipament);
+	f8(0, 850);
+	f8.afisareFermier();
+
+	cout << "Operator +=" << "\nAdaugam un nou echipament cu pretul 2500" << endl;
+	f3 += 2500;
+	f3.afisareFermier();
+
+	cout << "Operator -=" << "\nEliminam echipamentul cu pretul 1300" << endl;
+	f3 -= 1300;
+	f3.afisareFermier();
+	cout << endl;
+
+	cout << "Afisam valorile obiectului f3 dupa modificari" << endl;
+
+	cout << "ID: "<<f3.getId() << endl;
+
+	f3.setNume("Sandra Diac");
+	cout << "Nume: "<<f3.getNume() << endl;
+
+	f3.setVarsta(32);
+	cout << "Varsta: "<<f3.getVarsta() << endl;
+
+	int pret[] = { 99, 760, 1150, 1600, 2300 };
+	f3.setEchipament(5, pret);
+	cout << "Numar echipamente: " << f3.getNrEchipamente() << endl;
+	for (int i = 0; i < f3.getNrEchipamente(); i++) {
+		cout << "Pret echipament " << i + 1 << ": " << f3.getPretEchipamente()[i] << endl;
+	}
+	cout << endl;
+	f3.setNrFermieri(10);
+	cout << "Numar Fermieri: "<<Fermier::getNrFermieri() << endl << endl;
+	cout << endl;
+
+
+	Fermier::resetNrFermieri();
+	cout << "Resetare Fermieri; Reincepem inregistrarea fermierilor" << endl;
+
+	Fermier f5;
+	f5.afisareFermier();
+	Fermier f6("Bogdan Antal", 41, 2, pretEchipament);
+	f6.afisareFermier();
+
+	cout << endl << endl;
 
 
 	cout << "LEGUMA" << endl;
@@ -1199,122 +1194,122 @@ void main() {
 	cout << Leguma::getNrLegume() << endl;
 	cout << endl;
 
-	//cout << "Constructorul de copiere" << endl;
-	//Leguma l4=l2;
-	//l4.afisareLeguma();
-	//cout << endl;
+	cout << "Constructorul de copiere" << endl;
+	Leguma l4=l2;
+	l4.afisareLeguma();
+	cout << endl;
 
-	//cout << "Operator =" << endl;
-	//l4 = l3;
-	//cout << l4 <<endl;
-	//cout << endl;
+	cout << "Operator =" << endl;
+	l4 = l3;
+	cout << l4 <<endl;
+	cout << endl;
 
-	//cout << "Crestem costul/kg cu 1" << endl << endl;
-	//cout << "Operatorul ++ pre incrementare" << endl;
-	//Leguma copie = ++l3;
-	//cout << copie << endl;
-	//cout << l3 << endl << endl;
-	//cout << "Operatorul ++ post incrementare" << endl;
-	//Leguma copie2 = l2++;
-	//cout << copie2 << endl;
-	//cout << l2 << endl << endl;
+	cout << "Crestem costul/kg cu 1" << endl << endl;
+	cout << "Operatorul ++ pre incrementare" << endl;
+	Leguma copie = ++l3;
+	cout << copie << endl;
+	cout << l3 << endl << endl;
+	cout << "Operatorul ++ post incrementare" << endl;
+	Leguma copie2 = l2++;
+	cout << copie2 << endl;
+	cout << l2 << endl << endl;
 
-	//cout << endl;
+	cout << endl;
 
-	//cout << "Operator +" <<"\nCostul tuturor legumelor/kg"<< endl;
-	//Leguma l6 = l1+l2+l3;
-	//l6.afisareLeguma();
-	//cout << endl;
+	cout << "Operator +" <<"\nCostul tuturor legumelor/kg"<< endl;
+	Leguma l6 = l1+l2+l3;
+	l6.afisareLeguma();
+	cout << endl;
 
-	//cout << "Operator cast" <<"\nAfisam costul KG ca numar intreg" << endl;
-	//cout << (int)l6 << endl;
-	//cout << endl;
-	//cout << endl;
-
-
-	//cout << "Afisam valorile obiectului l3 dupa modificari" << endl;
-
-	//cout << "ID: "<<l3.getId() << endl;
-
-	//l3.setTipLeguma("Salata");
-	//cout << "Tip leguma: "<<l3.getTipLeguma() << endl;
-
-	//l3.setCostKG(6.5);
-	//cout << "Cost kg: "<<l3.getCostKG() << endl;
-
-	//l3.setGataDeRecoltat(false);
-	//cout << "Este gata de recoltat (0-NU, 1-DA): "<<l3.getGataDeRecoltat() << endl;
-
-	//l3.setNrLegume(100);
-	//cout <<"Numar legume: "<<Leguma::getNrLegume() << endl << endl;
-	//cout << endl;
-	//
-
-	//cout << "Schimbam stadiul recoltarii" << endl;
-	//Leguma leguma[] = { l1, l2, l3};
-	//for (int i = 0; i < 3; ++i) {
-	//	schimbaStadiulRecoltarii(leguma[i]);
-	//}
-	//for (int i = 0; i < 3; ++i) {
-	//	leguma[i].afisareLeguma();
-	//}
-
-	//cout << endl;
-	//cout << "Costul total al legumelor gata de recoltat: " << Leguma::calculCostTotal(leguma, 3) << " lei" << endl;
-	//cout << endl;
-
-	//cout << "Operator ->" <<"\nModificam cost/kg al legumelor l2,l3" << endl;
-	//cout << l2->getCostKG() <<", "<< l3->getCostKG() << endl;
-	//l2.afisareLeguma();
-	//l3.afisareLeguma();
-	//cout << endl;
+	cout << "Operator cast" <<"\nAfisam costul KG ca numar intreg" << endl;
+	cout << (int)l6 << endl;
+	cout << endl;
+	cout << endl;
 
 
-	//cout << "Vectori de tipul celor 3 clase";
-	//const int numarFerme = 1; 
-	//Ferma ferme[numarFerme];
-	//const int numarFermieri = 2;
-	//Fermier fermieri[numarFermieri];
-	//const int numarLegume = 2;
-	//Leguma legume[numarLegume];
+	cout << "Afisam valorile obiectului l3 dupa modificari" << endl;
 
-	//cout << "Introduceti informatii despre ferme:\n";
-	//for (int i = 0; i < numarFerme; i++) {
-	//	cout << "Ferma " << i + 1 << ":\n";
-	//	cin >> ferme[i];
-	//	cout << ferme[i];
-	//}
+	cout << "ID: "<<l3.getId() << endl;
 
-	//cout << "Introduceti informatii despre fermieri:\n";
-	//for (int i = 0; i < numarFermieri; i++) {
-	//	cout << "Fermier " << i + 1 << ":\n";
-	//	cin >> fermieri[i];
-	//	cout << fermieri[i];
-	//}
+	l3.setTipLeguma("Salata");
+	cout << "Tip leguma: "<<l3.getTipLeguma() << endl;
 
-	//cout << "Introduceti informatii despre legume:\n";
-	//for (int i = 0; i < numarLegume; i++) {
-	//	cout << "Leguma " << i + 1 << ":\n";
-	//	cin >> legume[i];
-	//	cout << legume[i];
-	//}
-	//cout << endl << endl;
+	l3.setCostKG(6.5);
+	cout << "Cost kg: "<<l3.getCostKG() << endl;
 
-	//cout << "Matricea Legume" << endl;
+	l3.setGataDeRecoltat(false);
+	cout << "Este gata de recoltat (0-NU, 1-DA): "<<l3.getGataDeRecoltat() << endl;
 
-	//const int randuri = 2; 
-	//const int coloane = 2;
+	l3.setNrLegume(100);
+	cout <<"Numar legume: "<<Leguma::getNrLegume() << endl << endl;
+	cout << endl;
+	
 
-	//Leguma matriceLegume[randuri][coloane];
+	cout << "Schimbam stadiul recoltarii" << endl;
+	Leguma leguma[] = { l1, l2, l3};
+	for (int i = 0; i < 3; ++i) {
+		schimbaStadiulRecoltarii(leguma[i]);
+	}
+	for (int i = 0; i < 3; ++i) {
+		leguma[i].afisareLeguma();
+	}
 
-	//for (int i = 0; i < randuri; i++) {
-	//	for (int j = 0; j < coloane; j++) {
-	//		cout << endl;
-	//		cout << "Introduceti date pentru leguma din pozitia [" << i << "][" << j << "]:\n";
-	//		cin >> matriceLegume[i][j];
-	//		cout << matriceLegume[i][j];
-	//	}
-	//}
+	cout << endl;
+	cout << "Costul total al legumelor gata de recoltat: " << Leguma::calculCostTotal(leguma, 3) << " lei" << endl;
+	cout << endl;
+
+	cout << "Operator ->" <<"\nModificam cost/kg al legumelor l2,l3" << endl;
+	cout << l2->getCostKG() <<", "<< l3->getCostKG() << endl;
+	l2.afisareLeguma();
+	l3.afisareLeguma();
+	cout << endl;
+
+
+	cout << "Vectori de tipul celor 3 clase";
+	const int numarFerme = 1; 
+	Ferma ferme[numarFerme];
+	const int numarFermieri = 2;
+	Fermier fermieri[numarFermieri];
+	const int numarLegume = 2;
+	Leguma legume[numarLegume];
+
+	cout << "Introduceti informatii despre ferme:\n";
+	for (int i = 0; i < numarFerme; i++) {
+		cout << "Ferma " << i + 1 << ":\n";
+		cin >> ferme[i];
+		cout << ferme[i];
+	}
+
+	cout << "Introduceti informatii despre fermieri:\n";
+	for (int i = 0; i < numarFermieri; i++) {
+		cout << "Fermier " << i + 1 << ":\n";
+		cin >> fermieri[i];
+		cout << fermieri[i];
+	}
+
+	cout << "Introduceti informatii despre legume:\n";
+	for (int i = 0; i < numarLegume; i++) {
+		cout << "Leguma " << i + 1 << ":\n";
+		cin >> legume[i];
+		cout << legume[i];
+	}
+	cout << endl << endl;
+
+	cout << "Matricea Legume" << endl;
+
+	const int randuri = 2; 
+	const int coloane = 2;
+
+	Leguma matriceLegume[randuri][coloane];
+
+	for (int i = 0; i < randuri; i++) {
+		for (int j = 0; j < coloane; j++) {
+			cout << endl;
+			cout << "Introduceti date pentru leguma din pozitia [" << i << "][" << j << "]:\n";
+			cin >> matriceLegume[i][j];
+			cout << matriceLegume[i][j];
+		}
+	}
 	cout << endl<<endl;
 
 	cout << "MAGAZIN - relatie HAS A" << endl<<endl;
@@ -1358,8 +1353,8 @@ void main() {
 
 	cout << "Operatorul ++ post incrementare" << endl;
 	cout << "Crestem numarul vanzatorilor cu 1 si venitul cu 300" << endl << endl;
-	Magazin copie = m1++;
-	cout << copie << endl;
+	Magazin mcopie = m1++;
+	cout << mcopie << endl;
 	cout << m1 << endl << endl;;
 
 	cout << "Operator ()" << endl;
