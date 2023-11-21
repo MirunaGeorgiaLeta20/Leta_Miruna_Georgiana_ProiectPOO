@@ -1335,7 +1335,7 @@ void main() {
 	Magazin m2 = m;
 	cout << m2 << endl;
 
-	cout << "Operator =" << endl;
+	cout << "Operator = si operator <<" << endl;
 	m2 = m1;
 	cout << m2 << endl;
 
