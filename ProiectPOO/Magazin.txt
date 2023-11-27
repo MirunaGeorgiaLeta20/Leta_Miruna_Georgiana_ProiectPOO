@@ -1,0 +1,9 @@
+Nume magazin: Green M, Numar Vanzatori: 4, Venit: 3500
+Numarul de legume aflate in magazin: 4
+
+Legume: 
+ID: 124, Tip leguma: Rosie, Cost KG: 9.5, Gata de recoltat: 0
+ID: 125, Tip leguma: Salata, Cost KG: 8, Gata de recoltat: 0
+ID: 126, Tip leguma: Ciuperci, Cost KG: 13, Gata de recoltat: 0
+ID: 127, Tip leguma: Morcovi, Cost KG: 3.5, Gata de recoltat: 1
+
