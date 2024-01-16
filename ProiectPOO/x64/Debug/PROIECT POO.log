@@ -1,11 +1,8 @@
 ﻿  FAZELE 1-7.cpp
-D:\A. FACULTATE\PROIECT POO\Leta_Miruna_Georgiana_ProiectPOO\ProiectPOO\FAZELE 1-7.cpp(637,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\A. FACULTATE\PROIECT POO\Leta_Miruna_Georgiana_ProiectPOO\ProiectPOO\FAZELE 1-7.cpp(907,14): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
-D:\A. FACULTATE\PROIECT POO\Leta_Miruna_Georgiana_ProiectPOO\ProiectPOO\FAZELE 1-7.cpp(930,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\A. FACULTATE\PROIECT POO\Leta_Miruna_Georgiana_ProiectPOO\ProiectPOO\FAZELE 1-7.cpp(1261,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
-D:\A. FACULTATE\PROIECT POO\Leta_Miruna_Georgiana_ProiectPOO\ProiectPOO\FAZELE 1-7.cpp(1711,43): warning C4305: 'argument': truncation from 'double' to 'float'
-D:\A. FACULTATE\PROIECT POO\Leta_Miruna_Georgiana_ProiectPOO\ProiectPOO\FAZELE 1-7.cpp(1723,18): warning C4305: 'argument': truncation from 'double' to 'float'
-D:\A. FACULTATE\PROIECT POO\Leta_Miruna_Georgiana_ProiectPOO\ProiectPOO\FAZELE 1-7.cpp(1727,23): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\A. FACULTATE\PROIECT POO\Leta_Miruna_Georgiana_ProiectPOO\ProiectPOO\FAZELE 1-7.cpp(616,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\A. FACULTATE\PROIECT POO\Leta_Miruna_Georgiana_ProiectPOO\ProiectPOO\FAZELE 1-7.cpp(876,14): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+D:\A. FACULTATE\PROIECT POO\Leta_Miruna_Georgiana_ProiectPOO\ProiectPOO\FAZELE 1-7.cpp(899,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\A. FACULTATE\PROIECT POO\Leta_Miruna_Georgiana_ProiectPOO\ProiectPOO\FAZELE 1-7.cpp(1230,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
 D:\A. FACULTATE\PROIECT POO\Leta_Miruna_Georgiana_ProiectPOO\ProiectPOO\FAZELE 1-7.cpp(255): warning C4715: 'Ferma::operator[]': not all control paths return a value
 D:\A. FACULTATE\PROIECT POO\Leta_Miruna_Georgiana_ProiectPOO\ProiectPOO\FAZELE 1-7.cpp(494): warning C4715: 'Fermier::operator=': not all control paths return a value
   PROIECT POO.vcxproj -> D:\A. FACULTATE\PROIECT POO\Leta_Miruna_Georgiana_ProiectPOO\ProiectPOO\x64\Debug\PROIECT POO.exe

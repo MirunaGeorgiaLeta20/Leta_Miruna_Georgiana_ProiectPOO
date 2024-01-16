@@ -1,6 +1,6 @@
 ﻿//Domeniul Legumicultura (initiale: M,G,L)
 
-#include<iostream>
+#include<iostream> 
 #include<string>
 #include<fstream>
 
@@ -598,27 +598,6 @@ public:
 		return *this;
 	}
 
-	Fermier& operator-=(int valoareEchipament) {
-		bool found = false;
-		for (int i = 0; i < nrEchipamente; i++) {
-			if (pretEchipament[i] == valoareEchipament && !found) {
-				found = true;
-				for (int j = i; j < nrEchipamente - 1; j++) {
-					pretEchipament[j] = pretEchipament[j + 1];
-				}
-				nrEchipamente--;
-			}
-		}
-		if (found) {
-			int* pretEchipamentNou = new int[nrEchipamente];
-			for (int i = 0; i < nrEchipamente; i++) {
-				pretEchipamentNou[i] = pretEchipament[i];
-			}
-			delete[]pretEchipament;
-			pretEchipament = pretEchipamentNou;
-		}
-		return *this;
-	}
 
 	bool operator>=(Fermier fm) {
 		return this->varsta >= fm.varsta;
@@ -877,19 +856,9 @@ public:
 			return costTotal;
 		}
 		for (int i = 0; i < nrLegume; i++) {
-			if (leguma[i].getGataDeRecoltat()) {
-				costTotal = costTotal + leguma[i].getCostKG();
-			}
+			costTotal = costTotal + leguma[i].getCostKG();
 		}
 		return costTotal;
-	}
-
-	Leguma operator+(const Leguma& leg) {
-		Leguma result = leg;
-		result.setTipLeguma("mix");
-		result.setCostKG(this->getCostKG()+leg.costKG);
-		result.setGataDeRecoltat(false);
-		return result;
 	}
 
 	Leguma& operator++() {
@@ -1415,11 +1384,6 @@ void main() {
 	f3 += 2500;
 	f3.afisareFermier();
 
-	cout << "Operator -=" << "\nEliminam echipamentul cu pretul 1300" << endl;
-	f3 -= 1300;
-	f3.afisareFermier();
-	cout << endl;
-
 	cout << "Afisam valorile obiectului f3 dupa modificari" << endl;
 
 	cout << "ID: "<<f3.getId() << endl;
@@ -1470,7 +1434,7 @@ void main() {
 
 	Leguma l1;
 	Leguma l2("Rosie",8.5);
-	Leguma l3("Ardei", 9, true);
+	Leguma l3("Ardei", 9, false);
 	
 
 	l1.afisareLeguma();
@@ -1504,13 +1468,9 @@ void main() {
 
 	cout << endl;
 
-	cout << "Operator +" <<"\nCostul tuturor legumelor/kg"<< endl;
-	Leguma l6 = l1+l2+l3;
-	l6.afisareLeguma();
-	cout << endl;
 
-	cout << "Operator cast" <<"\nAfisam costul KG ca numar intreg" << endl;
-	cout << (int)l6 << endl;
+	cout << "Operator cast" <<"\nAfisam costul celei de-a doua legume ca numar intreg" << endl;
+	cout << (int)l2 << endl;
 	cout << endl;
 	cout << endl;
 
@@ -1525,7 +1485,7 @@ void main() {
 	l3.setCostKG(6.5);
 	cout << "Cost kg: "<<l3.getCostKG() << endl;
 
-	l3.setGataDeRecoltat(false);
+	l3.setGataDeRecoltat(true);
 	cout << "Este gata de recoltat (0-NU, 1-DA): "<<l3.getGataDeRecoltat() << endl;
 
 	l3.setNrLegume(100);
@@ -1543,7 +1503,7 @@ void main() {
 	}
 
 	cout << endl;
-	cout << "Costul total al legumelor gata de recoltat: " << Leguma::calculCostTotal(leguma, 3) << " lei" << endl;
+	cout << "Costul total al legumelor: " << Leguma::calculCostTotal(leguma, 3) << " lei" << endl;
 	cout << endl;
 
 	cout << "Operator ->" <<"\nModificam cost/kg al legumei l3" << endl;
